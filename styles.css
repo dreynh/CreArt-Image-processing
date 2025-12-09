@@ -102,23 +102,37 @@ img {
   box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Sidebar Toggle Button Styling */
-[data-testid="stSidebarCollapseButton"] {
-    background-color: #B20B13 !important;   /* Retro red */
-    border: 2px solid #FDECDC !important;   /* Cream */
+/* FIX untuk tombol panah (collapse / expand) */
+
+/* Style BUTTON yang berisi ikon Material Arrow */
+button[kind="headerNoPadding"] {
+    background-color: #B20B13 !important;     /* retro red */
+    border: 2px solid #FDECDC !important;     /* cream border */
     border-radius: 10px !important;
-    padding: 4px !important;
+    padding: 6px !important;
+    opacity: 1 !important;                    /* prevent hiding */
+    visibility: visible !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Icon Color */
-[data-testid="stSidebarCollapseButton"] svg {
-    fill: #FDECDC !important;   /* Cream icon */
+/* Style ICON panah (text Material Symbols) */
+button[kind="headerNoPadding"] span {
+    color: #FDECDC !important;                /* cream icon */
+    opacity: 1 !important;
 }
 
-/* Hover Effects */
-[data-testid="stSidebarCollapseButton"]:hover {
-    background-color: #B41A1A !important;  /* Darker retro red */
-    cursor: pointer;
+/* Hover effect */
+button[kind="headerNoPadding"]:hover {
+    background-color: #B41A1A !important;
     transform: scale(1.08);
     transition: 0.15s ease-in-out;
 }
+
+/* Disable fading/hide behavior */
+button[kind="headerNoPadding"] * {
+    opacity: 1 !important;
+    transition: none !important;
+}
+
