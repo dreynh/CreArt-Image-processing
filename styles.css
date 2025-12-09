@@ -101,3 +101,24 @@ img {
   border-radius: 10px;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
 }
+
+/* Sidebar Toggle Button Styling */
+[data-testid="stSidebarCollapseButton"] {
+    background-color: #B20B13 !important;   /* Retro red */
+    border: 2px solid #FDECDC !important;   /* Cream */
+    border-radius: 10px !important;
+    padding: 4px !important;
+}
+
+/* Icon Color */
+[data-testid="stSidebarCollapseButton"] svg {
+    fill: #FDECDC !important;   /* Cream icon */
+}
+
+/* Hover Effects */
+[data-testid="stSidebarCollapseButton"]:hover {
+    background-color: #B41A1A !important;  /* Darker retro red */
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: 0.15s ease-in-out;
+}
