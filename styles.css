@@ -1,0 +1,103 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Bebas+Neue&family=Courier+Prime&display=swap');
+
+/* COLOR VARIABLES */
+:root {
+  --red-strong: #B20B13;
+  --red-dark: #B41A1A;
+  --cream: #FDECDC;
+  --navy: #2A4562;
+}
+
+/* GLOBAL PAGE BACKGROUND */
+body {
+  background-color: var(--cream) !important;
+  font-family: 'Courier Prime', monospace;
+}
+
+/* HEADER */
+h1 {
+  font-family: 'Bebas Neue', sans-serif !important;
+  color: var(--navy) !important;
+  text-align: center;
+  font-size: 48px !important;
+}
+.subtitle {
+  text-align: center;
+  color: #6B4F3B;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  margin-top: -6px;
+  margin-bottom: 16px;
+}
+
+/* SIDEBAR */
+[data-testid="stSidebar"] {
+  background-color: var(--navy) !important;
+  padding: 28px 18px !important;
+}
+.sidebar-title {
+  color: var(--cream);
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sidebar-sub {
+  color: var(--cream);
+  opacity: 0.9;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+/* LABEL SELECT */
+.stSelectbox label {
+  color: var(--cream) !important;
+  font-family: 'Courier Prime';
+}
+
+/* SELECTBOX */
+div[data-baseweb="select"] > div {
+  background-color: var(--cream) !important;
+  color: var(--navy) !important;
+  border: 2px solid var(--red-strong) !important;
+  border-radius: 8px !important;
+}
+div[data-baseweb="select"] span {
+  color: var(--navy) !important;
+}
+div[data-baseweb="select"] svg {
+  fill: var(--navy) !important;
+}
+
+/* BUTTON */
+div.stButton > button,
+div.stDownloadButton > button {
+  background-color: var(--red-strong) !important;
+  color: var(--cream) !important;
+  border-radius: 10px !important;
+  border: 3px solid var(--navy) !important;
+  padding: 10px 15px !important;
+  font-family: 'Bebas Neue' !important;
+  font-size: 18px !important;
+  transition: 0.15s;
+}
+div.stButton > button:hover,
+div.stDownloadButton > button:hover {
+  transform: scale(1.04);
+}
+
+/* RESULT BOX */
+.result-box {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 18px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+img {
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
